@@ -112,7 +112,6 @@ def main():
     sim = Simulation()
 
     star = CelestialBody(width // 2, height // 2, 30000, 100, (0, 0, 0), True)
-    pygame.draw.circle(sim.screen, (0, 0, 0), (int(width // 2), int(height // 2)), 48)
     sim.add_body(star)
 
     planet = CelestialBody(width // 2 - 75 - star.radius, height // 2, 200, 20, (77, 157, 236))
